@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal</title>
+    <link rel="stylesheet" href="./assert/css/modal.css">
+</head>
+<body>
+    
+    <!-- modal wrapper -->
+    <div class="button__container">
+        <form>
+            <fieldset>
+              <legend>Working Modal</legend>
+              <input type="text" class="value" name="message-input" required/>
+               <div class="field-btns">
+                <span>? Get Your Shit Together.</span>
+                <input type="submit"href="#one" id="submit" value="Submit">
+               </div>
+          </form>
+    </div>
+
+    <main class="modal__message" id="one">
+       <div class="modal__message-wrapper">
+         <header>
+             <h4>message</h4>
+         </header>
+         <article>
+             <p class="message"></p>
+         </article>
+         <div class="buttons">
+             <button id="okBtn">OK</button>
+         </div>
+       </div>
+    </main>
+    
+
+    <script src="./assert/js/modal.js"></script>
+</body>
+</html>
