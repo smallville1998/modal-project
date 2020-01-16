@@ -84,17 +84,19 @@ body {
     background: rgba(0, 0, 0, 0.664);
     position: absolute; 
     top:0;
-    display: none;
-    transition: all 350ms ease-in-out;
+    transition: all 360ms ease-in-out;
 
+    opacity: 0;
+    visibility: hidden;
 }
 
 .display {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal__message .modal__message-wrapper {
-    /* transition: all 5030ms ease; */
+    transition-delay: 0.2s;
     margin-bottom: 200px;
     width: 400px;
     background-color:#226089 ;
@@ -104,9 +106,9 @@ body {
     transform: translate(-50%, -50%);
     position: absolute;
     border-radius: 12px;
-
+    transition: width 7s all ease-in;
+    
 } 
-
 .modal__message .modal__message-wrapper h4{
     text-align: center;
     border-radius: 4px 4px 0px 0px;
