@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modal</title>
     <link rel="stylesheet" href="./assert/css/modal.css">
@@ -11,29 +11,52 @@
     
     <!-- modal wrapper -->
     <div class="button__container">
-        <form>
-            <fieldset>
-              <legend>Working Modal</legend>
-              <input type="text" class="value" name="message-input" required/>
-               <div class="field-btns">
+        <div class="button__container-img">
+            <img src="./assert/img/Sbornik_oboev_253_156.jpg" alt="">
+        </div>
+          <form>
+              <div class="form-icon">
+                  <img src="./assert/img/login.png" alt=""></br>
+                  <span>Login</span>
+              </div>
+              <input type="email" class="value" placeholder="Email*" name="message-input" required/>
+               <textarea name="" id="text-area"  placeholder="Say something..."></textarea>
+              <div class="field-btns">
                 <span>? Get Your Shit Together.</span>
                 <input type="submit" id="submit" value="Submit">
                </div>
           </form>
     </div>
 
+    <!-- display modal that pop appear on submit -->
     <main class="modal__message" >
        <div class="modal__message-wrapper">
          <header>
-             <h4>message</h4>
+             <img src="./assert/img/profile.png" alt=""><br>
+             <span>User</span>
          </header>
          <article>
-             <p class="message"></p>
+             <p class="message">www.jonny@gmail.com</p>
+             <span>Says</span>
+             <p id="comment-message"></p>
          </article>
          <div class="buttons">
-             <button id="okBtn">OK</button>
+             <button id="okBtn">Agree</button>
+             <button id="okBtn">I disagree</button>
          </div>
        </div>
+
+       <div class="modal__pop">
+           <div class="modal__pop-icon">
+                <img src="./assert/img/toppng.com-12-months-blue-check-mark-icon-500x491.png" alt="">
+           </div>
+          <div class="finish-txt">
+              <h3>Congratulations</h3>
+              <p>You have just displayed the Awesome Pop View</p>
+          </div>
+          <button class="pop-btn">ok</button>
+       </div>
+ 
     </main>
     
 
