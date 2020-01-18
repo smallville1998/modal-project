@@ -16,7 +16,7 @@ var popMessage = document.querySelector('.modal__message--mod');
 // display modal
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    // modelMessage.style.transition ='all 3s ease-out' ;
+    
     modelMsgWrapper.classList.add('display');
 
     //append text to the modal
