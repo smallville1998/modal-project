@@ -10,7 +10,7 @@ var input = document.querySelector('.value');
 const textArea = document.getElementById('text-area');
 const message = document.querySelector('#comment-message')
 
-const popMessage = document.querySelector('.modal__pop');
+var popMessage = document.querySelector('.modal__message--mod');
 
 
 // display modal
@@ -18,6 +18,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     // modelMessage.style.transition ='all 3s ease-out' ;
     modelMsgWrapper.classList.add('display');
+
     //append text to the modal
     msg.innerHTML = input.value;
     message.innerHTML = textArea.value;
@@ -28,19 +29,21 @@ form.addEventListener('submit', (e) => {
 
 // exit modal
 okBtn.addEventListener('click', (e) => {
-    //nothing much just to exit the modal.
-    // modelMsgWrapper.classList.remove('display');
-    okBtn.parentElement.parentElement.remove()
-    popMessage.style.display = 'block'
+
+    popMessage.classList.add('display');
+    popMessage.style.visibility = 'visible';
+    popMessage.style.opacity = '1'
+
 })
 
 // pop message
 let popButton = document.querySelector('.pop-btn');
 popButton.onclick = (e) => {
-    popMessage.parentElement.remove();
-    location.reload()
+    popMessage.style.visibility = 'hidden';
+    popMessage.style.opacity = '0'
+    modelMsgWrapper.classList.remove('display');
+
 }
-console.log(popMessage)
 
 
 

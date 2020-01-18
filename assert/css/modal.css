@@ -126,7 +126,7 @@ body {
 .modal__message .modal__message-wrapper {
     /* display:none; */
     transition-delay: 0.2s;
-    width: 400px;
+    width: 450px;
     background-color:#fff ;
     height: 400px;
     top: 50%;
@@ -205,6 +205,19 @@ body {
 
 }
 
+
+.modal__message--mod {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.664);
+    position: absolute; 
+    top:0;
+    transition: all 360ms ease-in-out;
+    opacity: 0;
+    visibility: hidden; 
+    /* display:none */
+}
+
 .modal__pop {
     transition-delay: 0.2s;
     width: 400px;
@@ -217,7 +230,8 @@ body {
     border-radius: var(--border-radius);
     transition: width 7s all ease-in;
     text-align: center;
-    display:none;
+     /* opacity: 0;
+    visibility: hidden; */
 }
 .modal__pop-icon  {
     text-align: center;
